@@ -19,4 +19,14 @@
     <servlet-name>SampleServlet</servlet-name>
     <url-pattern>/SampleServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HellloServlet</display-name>
+    <servlet-name>HellloServlet</servlet-name>
+    <servlet-class>takuya.HellloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HellloServlet</servlet-name>
+    <url-pattern>/HellloServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
