@@ -1,7 +1,6 @@
 package tekitou;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,15 +28,14 @@ public class tekitou extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.setHeader("content-type;","yrxt/xml ;charset=UTF-8");
-		response.setHeader("content-disponsition","attachment;filename=a.xml");
-		PrintWriter out = response.getWriter();
-		out.println("<?xml version='1.0' ?>"
-				+ "<book>"
-				+"<author>平坂読</author>"
-				+"<title>僕は友達が多い</title>"
-				+"<date>2015/8/26</date>"
-				+"</book>");
+
+
+
+					//ただ転送してもつまらないので
+					java.util.Random rnd = new java.util.Random();
+					int i = rnd.nextInt(2)+1;
+
+					response.sendRedirect("/sample01/yu_"+i+".jpg");
 		//out.println("...");
 		//out.println("</html>");
 		//.append("Served at: ").append(request.getContextPath());

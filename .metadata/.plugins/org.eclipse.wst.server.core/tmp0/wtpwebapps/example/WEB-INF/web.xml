@@ -29,4 +29,14 @@
     <servlet-name>HellloServlet</servlet-name>
     <url-pattern>/HellloServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FowardServlet</display-name>
+    <servlet-name>FowardServlet</servlet-name>
+    <servlet-class>servlet.FowardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FowardServlet</servlet-name>
+    <url-pattern>/FowardServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
